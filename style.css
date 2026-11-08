@@ -773,6 +773,95 @@ body {
         padding: 7px;
     }
 }
+/* =====================================
+   FRAMWINGS CONNECT - PROJECT VISUAL
+===================================== */
+
+.visual-community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    width: 100%;
+    min-height: 340px;
+    padding: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #f8f6fa 0%,
+        #e8e0f0 55%,
+        #d9cbe7 100%
+    );
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.visual-community .visual-label {
+    align-self: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.framewings-image-wrapper {
+    width: 42%;
+    max-width: 230px;
+    height: 290px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 14px;
+
+    box-shadow: 0 12px 30px rgba(70, 52, 86, 0.12);
+}
+
+.framewings-project-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 8px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .visual-community {
+        min-height: 300px;
+    }
+
+    .framewings-image-wrapper {
+        width: 48%;
+        max-width: 210px;
+        height: 250px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .visual-community {
+        min-height: 250px;
+        padding: 18px 14px;
+        gap: 14px;
+    }
+
+    .framewings-image-wrapper {
+        width: 55%;
+        max-width: 170px;
+        height: 205px;
+        padding: 6px;
+    }
+}
 /* Featured thesis visual */
 .visual-thesis{background:linear-gradient(135deg,#e8e0f0 0%,#d9cbe7 55%,#c8b6d9 100%)}
 .thesis-art{width:min(78%,330px);min-height:150px;position:relative;padding:22px 24px;background:rgba(255,255,255,.58);border:1px solid rgba(255,255,255,.7);border-radius:13px;box-shadow:0 16px 35px rgba(91,70,111,.10);color:#51465d}
