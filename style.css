@@ -377,7 +377,75 @@ body {
     background: var(--ink);
   }
 }
+/* =================================
+   THESIS PROJECT - MFCC VISUALIZATION
+================================= */
 
+.visual-thesis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding: 35px 30px;
+    min-height: 320px;
+
+    background: linear-gradient(
+        135deg,
+        #f8f6fa,
+        #e8e0f0,
+        #d9cbe7
+    );
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.visual-thesis .visual-label {
+    align-self: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.thesis-image-wrapper {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 14px;
+
+    box-shadow: 0 12px 30px rgba(70, 52, 86, 0.10);
+}
+
+.thesis-mfcc-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Responsive untuk tampilan HP */
+@media (max-width: 768px) {
+    .visual-thesis {
+        padding: 22px 15px;
+        gap: 16px;
+        min-height: 220px;
+    }
+
+    .thesis-image-wrapper {
+        padding: 7px;
+    }
+
+    .thesis-mfcc-image {
+        max-height: 190px;
+    }
+}
 
 /* Featured thesis visual */
 .visual-thesis{background:linear-gradient(135deg,#e8e0f0 0%,#d9cbe7 55%,#c8b6d9 100%)}
