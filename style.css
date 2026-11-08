@@ -74,3 +74,306 @@
     gap: 8px;
   }
 }
+
+/* =========================================================
+   LAVENDER THEME — append this block at the END of style.css
+   Keeps the existing layout, spacing, typography, and content.
+   ========================================================= */
+
+:root {
+  --bg: #F8F6FA;
+  --ink: #393541;
+  --muted: #777181;
+  --peach: #E8E0F0;
+  --lilac: #E8E0F0;
+  --sage: #E4DFEB;
+  --blue: #E2E5EF;
+  --accent: #A58BAF;
+  --line: #E9E3EE;
+  --white: #FFFFFF;
+  --shadow: 0 22px 60px rgba(67, 54, 79, .09);
+}
+
+/* Main surfaces and navigation */
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+.site-header {
+  background: rgba(248, 246, 250, .92);
+  border-bottom-color: rgba(57, 53, 65, .08);
+}
+.brand-mark {
+  background: var(--ink);
+}
+.brand-dot,
+.highlight {
+  color: #A58BAF;
+}
+.nav a,
+.text-link {
+  color: #686273;
+}
+.nav a:hover,
+.text-link:hover {
+  color: #9277A3;
+}
+.nav .nav-contact {
+  border-color: #DCD3E5;
+  color: var(--ink);
+}
+.nav {
+  background-color: transparent;
+}
+
+/* Headings, decorative serif text, and small labels */
+.eyebrow {
+  color: #927DA0;
+}
+.serif-accent {
+  color: #9A82AA;
+}
+.status-dot {
+  background: #9B8AAE;
+  box-shadow: 0 0 0 4px #EEE9F3;
+}
+.meta-line {
+  background: #DCD3E5;
+}
+.hero-meta,
+.intro-strip {
+  color: #898394;
+}
+.intro-strip {
+  background: #EEEAF2;
+}
+.intro-strip span {
+  color: #9A82AA;
+}
+
+/* Hero illustration */
+.art-card {
+  background: linear-gradient(145deg, #E8DFF0, #D7C9E2);
+  box-shadow: 0 28px 60px rgba(105, 83, 125, .16);
+}
+.art-card:before {
+  border-color: rgba(255, 255, 255, .52);
+}
+.art-card-top,
+.art-card-bottom {
+  color: #70617D;
+}
+.art-monogram {
+  color: #FBF8FD;
+  text-shadow: 0 8px 25px rgba(91, 70, 112, .08);
+}
+.art-monogram span {
+  color: #A58BAF;
+}
+.art-orbit {
+  border-color: #E2D9E9;
+}
+.orbit-two {
+  border-color: #E8E1ED;
+}
+.floating-note {
+  background: #FFFDFF;
+  color: #817A8B;
+  box-shadow: var(--shadow);
+}
+.floating-note b {
+  color: var(--ink);
+}
+.note-icon {
+  background: #F0EAF5;
+  color: #9277A3;
+}
+.note-icon-lilac {
+  background: #E8E1F0;
+  color: #88739B;
+}
+.decor {
+  color: #A58BAF;
+}
+
+/* Section backgrounds and skill cards */
+.skills-section,
+.projects-section {
+  background: #F0EDF4;
+}
+.skill-peach {
+  background: #EEE4F0;
+}
+.skill-lilac {
+  background: #E8E0F0;
+}
+.skill-sage {
+  background: #E5E5ED;
+}
+.skill-blue {
+  background: #E2E5EF;
+}
+.skill-icon {
+  color: #776783;
+}
+.tags span,
+.project-tags span {
+  color: #625B6D;
+}
+.tools-label {
+  color: #927DA0;
+}
+.tools-line span:not(:first-child) {
+  border-color: #DED7E6;
+}
+
+/* Experience timeline */
+.timeline-item:not(:last-child):after {
+  background: #E3DCE9;
+}
+.timeline-date {
+  color: #897D94;
+}
+.timeline-marker {
+  background: #A58BAF;
+  border-color: #E8E0F0;
+}
+.company,
+.project-category {
+  color: #9277A3;
+}
+.work-type {
+  border-color: #DED7E6;
+  color: #897D94;
+}
+
+/* Project artwork and cards */
+.project-card {
+  background: #FFFDFF;
+  box-shadow: 0 8px 25px rgba(67, 54, 79, .045);
+}
+.visual-cazh {
+  background: #E8E0F0;
+}
+.visual-sales {
+  background: #E2E5EF;
+}
+.visual-community {
+  background: #E8E5ED;
+}
+.visual-sparkle {
+  background: #E5DDEF;
+}
+.mock-face {
+  background: #F0EAF5;
+  color: #9277A3;
+}
+.mock-lines > * {
+  background: #E9E3EE;
+}
+.mock-lines i {
+  background: #F0ECF3;
+}
+.mock-check {
+  background: #E4E5ED;
+  color: #78816F;
+}
+.invoice-head {
+  color: #7B6B8B;
+}
+.invoice-head span {
+  color: #A58BAF;
+}
+.invoice-rule,
+.invoice-row {
+  background: #E7E3EC;
+}
+.invoice-total {
+  background: #D8CDE3;
+}
+.community-art {
+  color: #77758D;
+}
+.community-art i {
+  color: #A58BAF;
+}
+.sparkle-art {
+  color: #8B76A0;
+}
+.sparkle-art small {
+  color: #9588A4;
+}
+.project-tags span {
+  background: #F0EDF3;
+}
+
+/* Education and contact */
+.education-card {
+  background: #EEEAF2;
+}
+.education-detail {
+  border-left-color: #D9D0E1;
+}
+.education-year,
+.education-note {
+  color: #9277A3;
+}
+.education-note {
+  background: #FBF8FD;
+}
+.contact-section {
+  background: #393541;
+}
+.contact-inner .eyebrow {
+  color: #C8B6D9;
+}
+.contact-inner .serif-accent {
+  color: #D7C8E5;
+}
+.contact-inner > p:not(.eyebrow) {
+  color: #D0CAD7;
+}
+.button-light {
+  background: #E8E0F0;
+  color: #393541;
+}
+.contact-links a {
+  color: #D2CBD9;
+}
+.contact-links a:hover {
+  color: #FFFFFF;
+}
+.contact-decoration {
+  color: rgba(255, 255, 255, .035);
+}
+.contact-decoration span {
+  color: rgba(200, 182, 217, .15);
+}
+
+/* Buttons, links, and footer details */
+.button-primary {
+  background: #51465D;
+  color: #FFFFFF;
+}
+.button-primary:hover {
+  box-shadow: 0 15px 35px rgba(81, 70, 93, .18);
+}
+.footer {
+  background: var(--bg);
+}
+.footer p,
+.copyright,
+.back-top {
+  color: #898394;
+}
+
+/* Mobile navigation uses the same lavender surface */
+@media (max-width: 650px) {
+  .nav {
+    background: #F8F6FA;
+    border-bottom-color: #E9E3EE;
+  }
+  .menu-toggle span {
+    background: var(--ink);
+  }
+}
