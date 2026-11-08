@@ -377,3 +377,14 @@ body {
     background: var(--ink);
   }
 }
+
+
+/* Featured thesis visual */
+.visual-thesis{background:linear-gradient(135deg,#e8e0f0 0%,#d9cbe7 55%,#c8b6d9 100%)}
+.thesis-art{width:min(78%,330px);min-height:150px;position:relative;padding:22px 24px;background:rgba(255,255,255,.58);border:1px solid rgba(255,255,255,.7);border-radius:13px;box-shadow:0 16px 35px rgba(91,70,111,.10);color:#51465d}
+.thesis-art>b{display:block;position:relative;z-index:1;font:800 18px/1.12 'Manrope',sans-serif;letter-spacing:1.2px;margin-top:14px}
+.waveform{height:35px;display:flex;align-items:center;gap:5px}
+.waveform i{display:block;width:4px;border-radius:8px;background:#9a83b2}
+.waveform i:nth-child(3n+1){height:13px}.waveform i:nth-child(3n+2){height:25px}.waveform i:nth-child(3n){height:33px}
+.thesis-models{position:absolute;right:20px;bottom:23px;font:700 12px 'Manrope',sans-serif;letter-spacing:1px;color:#806b98}
+.thesis-models i{font-style:normal;color:#b08cae;margin:0 4px}
