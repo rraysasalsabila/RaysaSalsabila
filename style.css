@@ -687,6 +687,92 @@ body {
         max-height: 150px;
     }
 }
+/* =====================================
+   PKM SPARKLE PROJECT
+===================================== */
+
+.visual-sparkle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    width: 100%;
+    min-height: 300px;
+    padding: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #f8f6fa 0%,
+        #eee6f3 55%,
+        #dfd1e9 100%
+    );
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.visual-sparkle .visual-label {
+    align-self: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.sparkle-image-wrapper {
+    width: 65%;
+    max-width: 280px;
+    height: 260px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+
+    box-shadow: 0 12px 30px rgba(70, 52, 86, 0.10);
+}
+
+.sparkle-project-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 10px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .sparkle-image-wrapper {
+        width: 70%;
+        max-width: 250px;
+        height: 230px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .visual-sparkle {
+        min-height: 240px;
+        padding: 18px 14px;
+        gap: 14px;
+    }
+
+    .sparkle-image-wrapper {
+        width: 65%;
+        max-width: 190px;
+        height: 190px;
+        padding: 7px;
+    }
+}
 /* Featured thesis visual */
 .visual-thesis{background:linear-gradient(135deg,#e8e0f0 0%,#d9cbe7 55%,#c8b6d9 100%)}
 .thesis-art{width:min(78%,330px);min-height:150px;position:relative;padding:22px 24px;background:rgba(255,255,255,.58);border:1px solid rgba(255,255,255,.7);border-radius:13px;box-shadow:0 16px 35px rgba(91,70,111,.10);color:#51465d}
