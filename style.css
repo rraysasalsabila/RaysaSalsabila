@@ -540,6 +540,60 @@ body {
         max-height: 200px;
     }
 }
+/* =====================================
+   SMALLER AI ATTENDANCE PROJECT IMAGE
+===================================== */
+
+.visual-cazh {
+    min-height: 260px;
+    padding: 24px;
+    gap: 16px;
+}
+
+.cazh-image-wrapper {
+    width: 85%;
+    max-width: 680px;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.cazh-dashboard-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .cazh-image-wrapper {
+        width: 90%;
+    }
+
+    .cazh-dashboard-image {
+        max-height: 190px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .visual-cazh {
+        min-height: 190px;
+        padding: 18px 12px;
+    }
+
+    .cazh-image-wrapper {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .cazh-dashboard-image {
+        max-height: 150px;
+    }
+}
 /* Featured thesis visual */
 .visual-thesis{background:linear-gradient(135deg,#e8e0f0 0%,#d9cbe7 55%,#c8b6d9 100%)}
 .thesis-art{width:min(78%,330px);min-height:150px;position:relative;padding:22px 24px;background:rgba(255,255,255,.58);border:1px solid rgba(255,255,255,.7);border-radius:13px;box-shadow:0 16px 35px rgba(91,70,111,.10);color:#51465d}
