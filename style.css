@@ -30,3 +30,47 @@
         height: 330px;
     }
 }
+.achievement-list {
+  margin-top: 45px;
+  display: grid;
+  gap: 0;
+}
+
+.achievement-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 25px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.achievement-year {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.achievement-item h3 {
+  font: 700 17px 'Manrope', sans-serif;
+  margin: 0 0 8px;
+}
+
+.achievement-item p,
+.coursework {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.coursework {
+  margin-top: 15px !important;
+}
+
+@media(max-width:650px) {
+  .achievement-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
